@@ -210,9 +210,6 @@ price: {
 
 Our bundled mobile integrations also check `properties.total` if `properties.revenue` is not present, and assign the total value as the amount value.
 
-### Limited Properties
-Intercom can only store [5 event properties](http://docs.intercom.io/Intercom-for-user-analysis/Tracking-User-Events-in-Intercom#metadata-support) per event. That means if you send an event to Segment with more than 5 properties, Intercom only shows the first 5 properties.
-
 ### Limited Events
 
 Intercom only allows a total of 120 unique _active_ event names. If you are sending Segment more than 120 unique event names, Intercom only accepts the first 120 events that their servers see, and the rest throw an error. In Intercom, an "Active" event is one which has not been archived. If you archive an event, it makes it inactive and removes it from your 120 active events. If you need to bring your account back under the 120 event limit, archive some events from in the Intercom UI by navigating to **Settings > (workspace name) data > Events**, then click on the event to archive.
